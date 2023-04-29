@@ -1,5 +1,5 @@
 import db from "@/database/db";
-import { createPassHash } from "../../../middleware/hasher";
+import { createPassHash } from "@/middleware/hasher";
 
 export default async (req, res) => {
   try {

@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "antd": "^5.4.6",
+    "cookie": "^0.5.0",
     "crypto": "^1.0.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "jsonwebtoken": "^9.0.0",
     "moment": "^2.29.4",
     "next": "13.3.1",
+    "next-cloudinary": "^4.8.0",
     "pg": "^8.10.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
