@@ -153,7 +153,7 @@ const RecipePage = ({ recipe, jwt, SignedIn }) => {
                 fontStyle: "italic",
               }}
             >
-              "{recipe.description}"
+              &quot;{recipe.description}&quot;
             </p>
           </Col>
           <Col span={20} style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>

@@ -35,13 +35,13 @@ export default function AboutUsPage() {
           <div style={{ fontSize: "20px" }}>
             <ul>
               <li>First, we eat. Then, we do everything else.</li>
-              <li>I'm not drooling; you are!</li>
+              <li>I&apos;m not drooling; you are!</li>
               <li>
                 Yes it just me, or does this meal look more scrumptious because
-                I'm on a diet?
+                I&apos;m on a diet?
               </li>
               <li>
-                I like people who love to eat. They're the best kind of people
+                I like people who love to eat. They&apos;re the best kind of people
                 in the world.
               </li>
               <li>Live, love, eat.</li>
@@ -61,12 +61,12 @@ export default function AboutUsPage() {
               fontFamily: "Arial, Helvetica, sans-serif",
             }}
           >
-            "Food is not only a source of nourishment for our bodies, but also a
+            &quot;Food is not only a source of nourishment for our bodies, but also a
             way to connect with others and experience joy. By choosing whole,
             nutritious foods and enjoying them in moderation, we can fuel our
-            bodies and minds while still savoring the pleasures of eating. Let's
+            bodies and minds while still savoring the pleasures of eating. Let&aphos;s
             celebrate the diversity and abundance of foods available to us and
-            embrace the idea that food can be both delicious and good for us!"
+            embrace the idea that food can be both delicious and good for us!&quot;
           </p>
         </Col>
       </Row>
