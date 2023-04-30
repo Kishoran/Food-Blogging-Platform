@@ -8,15 +8,15 @@ export default function LoginPage() {
   const router = useRouter();
   const handleSubmit = async (val) => {
     let { email, password } = val;
-    let url = "/api/auth/login"; // host server
-    let response = await fetch("/api/login_usr", {
+    let response = await fetch("/api/user/login_usr", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     });
+    response = await response.json();
 
     if (response.status) {
-      //message.success(response.message);
+      message.success(response.message);
       router.push("/");
     } else {
       message.error(response.message);

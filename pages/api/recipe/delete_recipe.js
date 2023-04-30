@@ -2,11 +2,8 @@ import db from "@/database/db";
 
 export default async (req, res) => {
   try {
-    const { email, title } = req.body;
-    const result = await db.query(
-      `DELETE FROM recipe WHERE email=$1 AND title = $2`,
-      [email, title]
-    );
+    const { id } = req.body;
+    await db.query(`DELETE FROM recipe WHERE id=$1`, [id]);
 
     res.json({
       status: true,

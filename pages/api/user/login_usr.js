@@ -27,7 +27,7 @@ export default async (req, res) => {
         );
 
         const serialised = serialize(cookie_name, token, {
-          httpOnly: true,
+          httpOnly: false,
           // secure: process.env.NODE_ENV !== "development",
           secure: false,
           sameSite: "strict",

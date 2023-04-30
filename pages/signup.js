@@ -12,7 +12,7 @@ export default function LoginPage() {
       message.error("Incorrect Confimation Password");
       return;
     }
-    let response = await fetch("/api/create_usr", {
+    let response = await fetch("/api/user/create_usr", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password }),

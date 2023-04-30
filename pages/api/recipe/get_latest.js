@@ -3,7 +3,7 @@ import db from "@/database/db";
 export default async (req, res) => {
   try {
     const result = await db.query(
-      `SELECT * FROM recipe ORDER BY id DESC LIMIT 5`
+      `SELECT * FROM recipe ORDER BY id DESC LIMIT 4`
     );
     if (result.rows[0]) {
       res.json({

@@ -3,7 +3,7 @@ import db from "@/database/db";
 export default async (req, res) => {
   try {
     const { email } = req.body;
-    const result = await db.query(`SELECT * FROM recipe WHERE email=$1`, [
+    const result = await db.query(`SELECT * FROM recipe WHERE email=$1 LIMIT 8`, [
       email,
     ]);
     if (result.rows[0]) {

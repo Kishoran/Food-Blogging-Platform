@@ -2,13 +2,14 @@ import db from "@/database/db";
 
 export default async (req, res) => {
   try {
-    const { id } = req.body;
-    const result = await db.query(`SELECT * FROM recipe WHERE id=$1`, [id]);
+    const result = await db.query(
+      `SELECT * FROM recipe ORDER BY id DESC LIMIT 8`
+    );
     if (result.rows[0]) {
       res.json({
         status: true,
         message: "Recipe Retrieved",
-        data: result.rows[0],
+        data: result.rows,
       });
     } else {
       res.json({

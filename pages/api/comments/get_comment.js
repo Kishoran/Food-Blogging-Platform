@@ -2,21 +2,22 @@ import db from "@/database/db";
 
 export default async (req, res) => {
   try {
-    const { email, title, date } = req.body;
+    const { email, title } = req.body;
     const result = await db.query(
-      `SELECT * FROM comments WHERE email=$1 AND title = $2 AND date =$3 `,
-      [email, title, date]
+      `SELECT * FROM comments WHERE email=$1 AND title = $2`,
+      [email, title]
     );
     if (result.rows[0]) {
       res.json({
         status: true,
         message: "Comment Retrieved",
-        data: result.rows[0],
+        data: result.rows,
       });
     } else {
       res.json({
         status: true,
         message: "Comment Not Found",
+        data: [],
       });
     }
   } catch (error) {
