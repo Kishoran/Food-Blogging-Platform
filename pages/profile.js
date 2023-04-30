@@ -129,12 +129,14 @@ export default function ProfilePage({ user }) {
               return (
                 <Col style={{ marginTop: "15px" }} key={id}>
                   <Card
+                    key={id}
                     hoverable
                     style={{ width: 260, minHeight: 500 }}
                     cover={<img alt="example" height={350} src={item.url} />}
                     actions={[
                       <EditOutlined key="edit" />,
                       <Popconfirm
+                        key={id}
                         title="Delete the comment"
                         description="Are you sure to delete this comment?"
                         onConfirm={() => {
